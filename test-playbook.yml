@@ -1,12 +1,15 @@
 ---
+
 - name: cisco_sh_ver
   hosts: all
   gather_facts: false 
   
   tasks:
-  - name: run show version on remote devices
-    cisco.ios.ios_command:
-     commands: show version
-     
-  register: out
-- debug: var=out.stdout_lines
+    - name: run show version on the routers
+      ios_command:
+        commands: show version | incl Version
+      register: output
+
+    - name: print output
+      debug:
+        var: output.stdout_lines
