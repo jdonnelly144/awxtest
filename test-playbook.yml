@@ -7,7 +7,7 @@
   tasks:
     - name: run show version on the routers
       cisco.ios.ios_command:
-        commands: show interfaces status
+        commands: show ip route
       register: output
 
     - name: print output
