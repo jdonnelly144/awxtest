@@ -12,7 +12,6 @@
         config:
         - name: GigabitEthernet1/0/2
           description: Configured and Merged by Ansible Network
-          duplex: full
-          enabled: false
-          shutdown: true
+          duplex: auto
+          enabled: true
         state: merged
