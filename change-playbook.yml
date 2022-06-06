@@ -3,7 +3,7 @@
 - name: cisco_sh_ver
   hosts: all
   gather_facts: false
-  ask_variables_on_launch: true
+  ask_variables_on_launch=true
  
   
 
