@@ -5,7 +5,7 @@
   gather_facts: false 
   
 
- tasks:
+  tasks:
     - name: Create VLAN
       cisco.ios.ios_vlans:
         config:
