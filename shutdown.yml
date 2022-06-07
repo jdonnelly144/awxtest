@@ -7,10 +7,10 @@
   
 
   tasks:
-  - name: make interface down
-    cisco.ios.ios_interface:
-       name: GigabitEthernet1/0/2
-       enabled: false
+    - name: make interface down
+       cisco.ios.ios_interface:
+         name: GigabitEthernet1/0/2
+         enabled: false
   
     - name: Merge provided configuration with device configuration
       cisco.ios.ios_interfaces:
