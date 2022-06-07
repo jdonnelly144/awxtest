@@ -10,8 +10,7 @@
     - name: Merge provided configuration with device configuration
       cisco.ios.ios_interfaces:
         config:
-        - name: GigabitEthernet1/0/11
+        - name: GigabitEthernet1/0/10
           description: Configured and Merged by Ansible Network
-          duplex: auto
-          enabled: false
+          # enabled: false
         state: merged
