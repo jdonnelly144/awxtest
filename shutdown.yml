@@ -7,6 +7,14 @@
   
 
   tasks:
+    - name: Gather only the interfaces resource facts and no legacy facts
+      cisco.ios.ios_facts:
+        gather_subset:
+         - '!all'
+         - '!min'
+        gather_network_resources:
+         - interfaces
+
     - name: Merge provided configuration with device configuration
       cisco.ios.ios_interfaces:
         config:
