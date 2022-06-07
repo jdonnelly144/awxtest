@@ -2,11 +2,15 @@
 
 - name: cisco_sh_ver
   hosts: all
-  gather_facts: false
+  gather_facts: true
  
   
 
   tasks:
+  - name: make interface down
+    cisco.ios.ios_interface:
+       name: GigabitEthernet1/0/2
+       enabled: false
   
     - name: Merge provided configuration with device configuration
       cisco.ios.ios_interfaces:
