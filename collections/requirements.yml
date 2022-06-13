@@ -8,7 +8,6 @@ collections:
   - cisco.asa
   - cisco.intersight
   - cisco.ios
-    version: 3.0.0
   - cisco.iosxr
   - cisco.meraki
   - cisco.mso
