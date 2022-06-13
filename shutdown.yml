@@ -9,7 +9,7 @@
   tasks:
   
     - name: Merge provided configuration with device configuration
-      cisco.iosxr.iosxr_interfaces:
+      cisco.ios.ios_interfaces:
         config:
         - name: GigabitEthernet1/0/10
           enabled: False
