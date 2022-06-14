@@ -14,7 +14,7 @@
           # description: Configured and Merged by Ansible Network
         state: merged
         
-      - name: Show values
+    - name: Show values
     debug:
       msg: |
         enabled is {{ enabled | type_debug }} and has value {{ enabled }}
