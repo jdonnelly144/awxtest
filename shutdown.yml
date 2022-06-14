@@ -1,7 +1,4 @@
 --- 
-
-  tasks:
-  
     - name: Merge provided configuration with device configuration
       cisco.ios.ios_interfaces:
         config:
