@@ -1,4 +1,5 @@
 --- 
+
 - name: cisco_test
   host: all
   gather_facts: false
