@@ -10,6 +10,6 @@
       cisco.ios.ios_interfaces:
         config:
         - name: GigabitEthernet1/0/10
-          enabled:false
+          # enabled:false
           description: Configured and Merged by Ansible Network
         state: merged
