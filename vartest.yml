@@ -11,5 +11,5 @@
         config:
         - name: GigabitEthernet1/0/10
           enabled: false
-          # description: Configured and Merged by Ansible Network
+          description: Configured and Merged by Ansible Network
         state: merged
