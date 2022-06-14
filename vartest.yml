@@ -15,6 +15,6 @@
         state: merged
         
     - name: Show values
-    debug:
+      debug:
       msg: |
         enabled is {{ enabled | type_debug }} and has value {{ enabled }}
