@@ -14,5 +14,5 @@
         - name: FastEthernet1/1
         ipv4:
         - address: 192.168.0.1/24
-          secondary: true
-       state: merged
+         # secondary: true
+        state: merged
