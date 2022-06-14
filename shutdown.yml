@@ -1,5 +1,6 @@
 --- 
 - name: cisco_test
+  gather_facts: false
   
   tasks:
   
