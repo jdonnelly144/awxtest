@@ -11,7 +11,7 @@
         <config>
           <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
             <interface>
-              <name>GigabitEthernet1/0/10</name>
+              <name>GigabitEthernet0/0</name>
               <description>Managed by Ansible using netconf connection</description>
             </interface>
           </interfaces>
