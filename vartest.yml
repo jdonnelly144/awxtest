@@ -10,11 +10,11 @@
       cisco.ios.ios_interfaces:
         config:
         - name: GigabitEthernet1/0/10
-          enabled: 'no'
+          enabled: false
           # description: Configured and Merged by Ansible Network
         state: merged
-      register: ios_interface_output
-
-    - name: "TASK 2: SYS >> DEBUG OUTPUT"
-      debug:
-        msg: "{{ ios_interface_output }}"
+        
+      - name: Show values
+    debug:
+      msg: |
+        enabled is {{ enabled | type_debug }} and has value {{ enabled }}
