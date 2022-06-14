@@ -16,5 +16,5 @@
         
     - name: Show values
       debug:
-      msg: |
+        msg: |
         enabled is {{ enabled | type_debug }} and has value {{ enabled }}
