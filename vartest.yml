@@ -13,3 +13,8 @@
           enabled: 'no'
           # description: Configured and Merged by Ansible Network
         state: merged
+      register: ios_interface_output
+
+    - name: "TASK 2: SYS >> DEBUG OUTPUT"
+      debug:
+        msg: "{{ ios_interface_output }}"
