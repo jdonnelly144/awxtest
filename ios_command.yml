@@ -8,7 +8,7 @@
   tasks:
 
     - name: run multiple commands and evaluate the output
-       cisco.ios.ios_command:
+      cisco.ios.ios_command:
         commands:
           - configure terminal
           - interface gigabitEthernet 1/0/10
