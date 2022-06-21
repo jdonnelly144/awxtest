@@ -1,13 +1,13 @@
 ---
 
--name: cisco_clear_arp
-hosts: all
-gather_facts: false
+- name: cisco_clear_arp
+  hosts: all
+  gather_facts: false
 
 
-tasks:
+  tasks:
 
--name: run clear arp command
- cisco.ios.ios_command:
-   commands:
-    - clear arp-cache "{{ ip_address }}"
+- name: run clear arp command
+  cisco.ios.ios_command:
+    commands:
+     - clear arp-cache "{{ ip_address }}"
