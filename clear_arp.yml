@@ -1,8 +1,8 @@
 ---
 
 -name: cisco_clear_arp
- hosts: all
- gather_facts: false
+hosts: all
+gather_facts: false
 
 
 tasks:
